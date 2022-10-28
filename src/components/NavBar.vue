@@ -20,8 +20,8 @@ export default {
   justify-content: space-around
   padding: 10px 0
   width: 100%
-  align-content: flex-start
   align-self: flex-start
+  position: absolute
   top: 0
 .items__section
   display: flex
