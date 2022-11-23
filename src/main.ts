@@ -1,7 +1,8 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import store from './store'
-import '@/styles/animations.sass'
+import '@/assets/styles/animations.sass'
+import '@/assets/styles/app.sass'
 
 const app = createApp(App)
 

@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar">
-    <img src="@/assets/logo.svg" alt="logo" class="navbar__logo">
+    <img alt="logo" class="navbar__logo" src="@/assets/images/logo.svg">
     <div class="items__section">
       <div class="nav__item">Главная</div>
       <div class="nav__item">Аналитика</div>
@@ -10,8 +10,7 @@
 </template>
 
 <script>
-export default {
-}
+export default {}
 </script>
 
 <style lang="sass" scoped>
@@ -23,9 +22,11 @@ export default {
   align-self: flex-start
   position: absolute
   top: 0
+
 .items__section
   display: flex
   flex: 0 0 30%
+
   .nav__item
     display: flex
     border-top: 5px solid lightgray

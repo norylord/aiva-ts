@@ -6,7 +6,7 @@
         <h1 class="title">Проанализируй <br> уровень <span style="color: #95CCD9">зарплат в IT</span></h1>
         <h3 class="subtitle">Мы собрали данные об уровене зарплат ведущих специальностей в области
           <br>Data Science c 2020-2022</h3>
-        <img alt="" class="arrow_icon" src="@/assets/arrow.svg">
+        <ArrowDown class="arrow_icon"/>
       </div>
     </section>
     <section class="section">
@@ -19,38 +19,19 @@
 
 <script setup>
 
-import NavBar from "@/components/NavBar";
-import ParamsContainer from "@/components/ParamsSelector/ParamsContainer";
-</script>
+import NavBar from "@/components/helpers/NavBar";
+import ParamsContainer from "@/components/app/params/ParamsSelector/ParamsContainer";
+import ArrowDown from "@/components/icons/ArrowDown";</script>
 
 <style lang="sass">
-*
-  margin: 0
-  padding: 0
-  box-sizing: border-box
-  font-family: 'Montserrat', sans-serif
-  color: #808080
 
-.section
-  width: 100%
-  height: 100vh
-  scroll-snap-align: start
-  display: flex
-  position: relative
-  align-items: center
-  justify-content: center
-  flex-direction: column
-
-.wrapper
-  height: 100vh
-  scroll-snap-type: y mandatory
-  overflow-y: auto
 
 .title
   font-weight: 900
   font-size: 72px
   line-height: 1.2
   margin-top: 120px
+
 .subtitle
   margin: 80px 0
   font-weight: 400
@@ -59,9 +40,5 @@ import ParamsContainer from "@/components/ParamsSelector/ParamsContainer";
 .arrow_icon
   animation: jumpingArrow 2s infinite ease-in-out
 
-.container
-  width: 100%
-  max-width: 1140px
-  margin: 0 auto
-  text-align: center
+
 </style>
